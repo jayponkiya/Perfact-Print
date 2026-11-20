@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Served for any missing URL, so every relative link must resolve from the site root. -->
+  <base href="/">
+  <meta name="robots" content="noindex">
+  <title>Page not found — Perfect Print, Rajkot</title>
+  <meta name="description" content="This page doesn't exist. Head back to Perfect Print's home page, services or quote form.">
+
+  <!-- Social sharing (replace https://www.example.com with the live domain) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Perfect Print">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Page not found — Perfect Print">
+  <meta property="og:description" content="This page doesn't exist. Head back to Perfect Print's home page, services or quote form.">
+  <meta property="og:url" content="https://www.example.com/404.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/brand/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Perfect Print logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons (generated from the logo; see assets/favicon/) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0b0b0f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+  <script>
+    /* Motion: cover the page until js/animations.js starts the CMYK wipe (removed after 3 s at most).
+       Skipped entirely for visitors who prefer reduced motion. */
+    (function (d) {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      d.classList.add("pp-motion", "pp-loading");
+      setTimeout(function () { d.classList.remove("pp-loading"); }, 3000);
+    })(document.documentElement);
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="404">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="container error-page">
+      <div>
+        <div class="error-code" aria-hidden="true">404</div>
+        <h1 style="font-size:var(--fs-2xl)">This page didn't make it to print.</h1>
+        <p>The page you're looking for has moved or never existed. Let's get you back on track.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="index.html">Back to home</a>
+          <a class="btn btn--ghost" href="services.html">Browse services</a>
+          <a class="btn btn--ghost" href="catalog.html">See the catalog</a>
+          <a class="btn btn--ghost" href="quote.html">Get a quote</a>
+        </div>
+        <p class="error-help">Looking for something specific? <a href="contact.html" data-wa-link="Hi Perfect Print! I couldn't find a page on your website.">Ask us on WhatsApp</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/images.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

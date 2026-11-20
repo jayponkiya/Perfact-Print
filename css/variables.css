@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Perfect Print — design tokens
+   --------------------------------------------------------------------------
+   Brand colours were sampled pixel-by-pixel from assets/logo/logo.png:
+   the spectrum "P" mark, the black wordmark and the CMYK strip under "PRINT".
+
+   Direction: premium and clean. White and ink-black surfaces do the work;
+   the logo spectrum appears sparingly as an accent (heading highlights,
+   primary buttons, borders, glows). The CMYK strip is the recurring divider.
+   ========================================================================== */
+
+:root {
+  /* ---------- Brand spectrum (sampled from the "P" mark) ---------- */
+  --c-red: #f2140f;       /* logo #FB0301, toned a touch for screens */
+  --c-orange: #fe6100;    /* logo #FE6100 */
+  --c-amber: #f39704;     /* logo #F39704 */
+  --c-yellow: #fdeb01;    /* logo #FDEB01 */
+  --c-green: #02b03f;     /* logo #02B03F */
+  --c-cyan: #00a7ec;      /* logo strip #00A7EC */
+  --c-blue: #0045bc;      /* logo #0045BC */
+  --c-indigo: #052baa;    /* logo #052BAA */
+  --c-violet: #681eb3;    /* logo #681EB3 */
+  --c-purple: #892dd6;    /* logo #892DD6 */
+  --c-magenta: #e5008a;   /* logo #E5008A */
+
+  /* CMYK strip (under "PRINT") */
+  --c-cmyk-c: #00a7ec;
+  --c-cmyk-m: #ec0680;
+  --c-cmyk-y: #fadc00;
+  --c-cmyk-k: #0b0b0f;
+
+  /* Readable-on-white variants for small accent text */
+  --c-yellow-ink: #b88a00;
+  --c-green-ink: #01853a;
+
+  /* ---------- Neutrals ---------- */
+  --c-ink: #0b0b0f;        /* near-black, matches the wordmark */
+  --c-ink-2: #17171d;      /* raised surface on dark */
+  --c-ink-3: #24242c;      /* borders / hover on dark */
+  --c-white: #ffffff;
+  --c-paper: #ffffff;
+  --c-paper-2: #f6f6f8;    /* soft gray section */
+  --c-paper-3: #ececf0;    /* image wells, inputs */
+  --c-line: #e4e4ea;       /* hairlines on white */
+  --c-line-dark: rgba(255, 255, 255, 0.1);
+  --c-muted: #5d5d69;      /* body copy secondary (AA on white) */
+  --c-muted-dark: rgba(255, 255, 255, 0.66);
+
+  --c-whatsapp: #25d366;       /* brand green: icons on dark only (1.98:1 on white) */
+  --c-whatsapp-dark: #128c4b;
+  --c-whatsapp-deep: #0d7a41;  /* surfaces with white text/icons: 5.42:1 */
+  --c-whatsapp-deep-hover: #0b6e3a;
+
+  /* Accessible magenta variants (logo magenta is 4.47:1 with white, just under AA) */
+  --c-magenta-deep: #d1007e;   /* white text on it: 5.23:1 — buttons, CTA panel */
+  --c-magenta-ink: #c2007a;    /* magenta text on white: 5.87:1 — errors, asterisks */
+
+  --c-primary: var(--c-magenta);
+  --c-focus: var(--c-blue);    /* 8.15:1 on white; dark areas switch to cyan, the CTA panel to white */
+
+  /* ---------- Gradients ---------- */
+  /* Full logo sweep — use for thin accents only (rules, text highlights, rings). */
+  --grad-brand: linear-gradient(90deg,
+      var(--c-magenta) 0%, var(--c-violet) 15%, var(--c-blue) 30%, var(--c-cyan) 44%,
+      var(--c-green) 58%, var(--c-yellow) 72%, var(--c-orange) 86%, var(--c-red) 100%);
+  /* Calmer three-stop gradient for filled surfaces (primary button). */
+  --grad-accent: linear-gradient(120deg, var(--c-magenta) 0%, var(--c-violet) 55%, var(--c-blue) 100%);
+  /* Same sweep starting on the deeper magenta: for surfaces that carry white text. */
+  --grad-accent-surface: linear-gradient(120deg, var(--c-magenta-deep) 0%, var(--c-violet) 55%, var(--c-blue) 100%);
+  --grad-accent-hover: linear-gradient(120deg, #ff1a9e 0%, #7a2bd0 55%, #0a55d8 100%);
+  /* Hard-stop CMYK strip — the divider motif. */
+  --grad-cmyk: linear-gradient(90deg,
+      var(--c-cmyk-c) 0 25%, var(--c-cmyk-m) 25% 50%, var(--c-cmyk-y) 50% 75%, var(--c-cmyk-k) 75% 100%);
+  --grad-cmyk-on-dark: linear-gradient(90deg,
+      var(--c-cmyk-c) 0 25%, var(--c-cmyk-m) 25% 50%, var(--c-cmyk-y) 50% 75%, #ffffff 75% 100%);
+  /* Back-compat alias (older markup) */
+  --grad-spectrum: var(--grad-brand);
+
+  /* ---------- Typography ---------- */
+  --font-display: "Sora", "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Fluid scale: min @ 360px viewport → max @ ~1280px */
+  --fs-xs: 0.8125rem;                                        /* 13px */
+  --fs-sm: 0.9375rem;                                        /* 15px */
+  --fs-base: 1rem;                                           /* 16px */
+  --fs-md: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);       /* 17–19 */
+  --fs-lg: clamp(1.25rem, 1.12rem + 0.55vw, 1.5rem);         /* 20–24 */
+  --fs-xl: clamp(1.5rem, 1.25rem + 1.1vw, 2.125rem);         /* 24–34 */
+  --fs-2xl: clamp(1.875rem, 1.4rem + 2.1vw, 3rem);           /* 30–48 */
+  --fs-3xl: clamp(2.375rem, 1.6rem + 3.5vw, 4.25rem);        /* 38–68 */
+  --fs-display: clamp(2.625rem, 1.6rem + 4.6vw, 5.25rem);    /* 42–84 */
+
+  --fw-display: 800;
+  --fw-heading: 700;
+  --lh-tight: 1.04;
+  --lh-snug: 1.22;
+  --lh-body: 1.65;
+  --ls-display: -0.035em;
+  --ls-heading: -0.02em;
+  --ls-eyebrow: 0.16em;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --sp-1: 0.25rem;   /* 4 */
+  --sp-2: 0.5rem;    /* 8 */
+  --sp-3: 0.75rem;   /* 12 */
+  --sp-4: 1rem;      /* 16 */
+  --sp-5: 1.5rem;    /* 24 */
+  --sp-6: 2rem;      /* 32 */
+  --sp-7: 3rem;      /* 48 */
+  --sp-8: 4rem;      /* 64 */
+  --sp-9: 6rem;      /* 96 */
+  --sp-10: 8rem;     /* 128 */
+  --section-y: clamp(4rem, 2.8rem + 5vw, 7.5rem);
+
+  /* ---------- Layout ---------- */
+  --container: 1200px;
+  --container-wide: 1360px;
+  --container-narrow: 760px;
+  --gutter: clamp(16px, 4vw, 32px);
+  --header-h: 80px;      /* header at top of page (body is offset by this) */
+  --header-h-sm: 62px;   /* header after scrolling */
+
+  /* ---------- Radius ---------- */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-xs: 0 1px 2px rgba(11, 11, 15, 0.06);
+  --shadow-sm: 0 1px 2px rgba(11, 11, 15, 0.05), 0 4px 12px -2px rgba(11, 11, 15, 0.06);
+  --shadow: 0 2px 4px rgba(11, 11, 15, 0.04), 0 16px 32px -12px rgba(11, 11, 15, 0.16);
+  --shadow-lg: 0 4px 8px rgba(11, 11, 15, 0.05), 0 32px 64px -24px rgba(11, 11, 15, 0.3);
+  --glow-magenta: 0 12px 32px -8px rgba(229, 0, 138, 0.45);
+  --glow-brand: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 20px 60px -20px rgba(104, 30, 179, 0.55);
+  --glow-whatsapp: 0 12px 30px -8px rgba(37, 211, 102, 0.55);
+
+  /* ---------- Motion ---------- */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 150ms;
+  --dur: 240ms;
+  --dur-slow: 480ms;
+
+  /* ---------- Z-index scale ---------- */
+  --z-below: -1;
+  --z-base: 0;
+  --z-raised: 10;
+  --z-header: 50;
+  --z-float: 60;
+  --z-overlay: 90;
+  --z-lightbox: 100;
+  --z-toast: 120;
+}

@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfect Print, Rajkot — Printing, Signage &amp; Custom Merch</title>
+  <meta name="description" content="Rajkot print &amp; branding studio: business cards, rubber stamps, labels, LED sign boards, flex banners and T-shirts. Free quotes on WhatsApp.">
+  <link rel="canonical" href="https://www.example.com/">
+
+  <!-- Social sharing (replace https://www.example.com with the live domain) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Perfect Print">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Perfect Print, Rajkot — Imagined by you. Printed to perfection.">
+  <meta property="og:description" content="Rajkot print &amp; branding studio: business cards, rubber stamps, labels, LED sign boards, flex banners and T-shirts. Free quotes on WhatsApp.">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/assets/images/brand/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Perfect Print logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons (generated from the logo; see assets/favicon/) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0b0b0f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+  <script>
+    /* Motion: cover the page until js/animations.js starts the CMYK wipe (removed after 3 s at most).
+       Skipped entirely for visitors who prefer reduced motion. */
+    (function (d) {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      d.classList.add("pp-motion", "pp-loading");
+      setTimeout(function () { d.classList.remove("pp-loading"); }, 3000);
+    })(document.documentElement);
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- 1. Hero ============================================================ -->
+    <section class="home-hero" aria-labelledby="hero-title">
+      <div class="home-hero-media">
+        <img data-img="heroMain" alt="" sizes="100vw" fetchpriority="high">
+      </div>
+
+      <div class="container home-hero-grid">
+        <div class="home-hero-copy">
+          <p class="eyebrow">Print &amp; branding studio · Rajkot</p>
+          <h1 id="hero-title">Imagined by you. <span class="ink">Printed to perfection.</span></h1>
+          <p class="lead">Business cards, rubber stamps, shop signs, flex banners and custom merch, designed, printed and finished in-house. Send us your idea on WhatsApp and we'll come back with a clear price.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary btn--lg" href="quote.html">Get Free Quote <span data-icon="arrow"></span></a>
+            <a class="btn btn--ghost-light btn--lg" href="catalog.html">View Catalog</a>
+          </div>
+          <ul class="hero-points">
+            <li><span data-icon="check"></span>In-house design</li>
+            <li><span data-icon="check"></span>Proof before every print</li>
+            <li><span data-icon="check"></span>Quotes on WhatsApp</li>
+          </ul>
+        </div>
+
+        <div class="hero-collage">
+          <span class="blob blob--magenta" aria-hidden="true"></span>
+          <span class="blob blob--cyan" aria-hidden="true"></span>
+          <span class="blob blob--yellow" aria-hidden="true"></span>
+
+          <figure class="float-card float-card--catalog">
+            <img data-img="catalogCover" sizes="(min-width: 960px) 260px, 40vw">
+            <figcaption>Our catalog (PDF)</figcaption>
+          </figure>
+          <figure class="float-card float-card--cards">
+            <img data-img="serviceBusinessCard" sizes="(min-width: 960px) 240px, 40vw">
+            <figcaption>Business cards</figcaption>
+          </figure>
+          <figure class="float-card float-card--proof">
+            <img data-img="heroServices" sizes="(min-width: 960px) 180px, 30vw">
+            <figcaption>Colour-checked proofs</figcaption>
+          </figure>
+          <figure class="float-card float-card--sign">
+            <img data-img="serviceLedSign" sizes="(min-width: 960px) 220px, 35vw">
+            <figcaption>LED sign boards</figcaption>
+          </figure>
+
+          <p class="float-chip">
+            <span class="float-chip-icon" data-icon="whatsapp"></span>
+            <span>Quotes on WhatsApp<small>Send a photo or a sketch</small></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Marquee (service names from js/config.js) ======================= -->
+    <section class="ticker" aria-label="Services we offer" data-render="ticker"></section>
+
+    <!-- 3. Services overview (4 categories from js/config.js) ============= -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">What we print</p>
+            <h2 id="services-title">Four departments. One counter to call.</h2>
+            <p>Stationery, stamps, signage and special jobs, all handled by the same team, so your brand looks the same on every piece.</p>
+          </div>
+          <a class="btn btn--ghost" href="services.html">All services <span data-icon="arrow"></span></a>
+        </div>
+        <div class="grid grid--4" data-render="service-cards"></div>
+      </div>
+    </section>
+
+    <!-- 4. Featured products (list in js/config.js → featured) ============ -->
+    <section class="section section--tint" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Featured products</p>
+            <h2 id="featured-title">What we print every day.</h2>
+            <p>Pick a product to start a quote with it already filled in, or flip through the catalog for more ideas.</p>
+          </div>
+          <a class="btn btn--ghost" href="catalog.html">View full catalog <span data-icon="arrow"></span></a>
+        </div>
+
+        <div class="featured-grid">
+          <article class="catalog-tile">
+            <div class="img-frame">
+              <img data-img="catalogCover" sizes="(min-width: 1100px) 320px, (min-width: 600px) 50vw, 100vw">
+            </div>
+            <div class="catalog-tile-body">
+              <p class="catalog-tile-label">Catalog · PDF</p>
+              <h3><a href="catalog.html" data-catalog-pdf target="_blank" rel="noopener">All 30 products in one catalog<span class="visually-hidden"> (PDF, opens in a new tab)</span></a></h3>
+              <p>Every product by department, with photos, sizes and finishes. Save it, share it, or tap any product to ask for a quote on WhatsApp.</p>
+              <span class="link-arrow" aria-hidden="true">Open the PDF (<span data-catalog-size></span>) <span data-icon="arrow"></span></span>
+            </div>
+          </article>
+          <div class="featured-items" data-render="featured"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Why choose us ================================================== -->
+    <section class="section section--ink section--glow" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why choose us</p>
+          <h2 id="why-title">Good printing is more than ink on paper.</h2>
+          <p>It's getting the colour right, the finish right and the date right, every time.</p>
+        </div>
+        <ul class="why-grid">
+          <li class="why-card accent-cyan">
+            <span class="feature-icon" data-icon="palette"></span>
+            <h3>Creative Design</h3>
+            <p>No artwork yet? Bring a sketch, a photo or just a few words. Our designers turn it into print-ready files.</p>
+          </li>
+          <li class="why-card accent-magenta">
+            <span class="feature-icon" data-icon="badge"></span>
+            <h3>Premium Quality</h3>
+            <p>Good paper, accurate colour and clean cutting and finishing, checked before anything leaves the shop.</p>
+          </li>
+          <li class="why-card accent-yellow">
+            <span class="feature-icon" data-icon="clock"></span>
+            <h3>On-time Delivery</h3>
+            <p>We agree a ready date with you up front and keep to it. Urgent job? Tell us and we'll tell you honestly what's possible.</p>
+          </li>
+          <li class="why-card accent-green">
+            <span class="feature-icon" data-icon="handshake"></span>
+            <h3>Your Satisfaction Is Our Priority</h3>
+            <p>Nothing goes to print until you've seen the proof and said yes. If something isn't right, we fix it first.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. How it works =================================================== -->
+    <section class="section" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">How it works</p>
+          <h2 id="process-title">From first message to finished print in four steps.</h2>
+        </div>
+        <ol class="steps steps--cards">
+          <li class="step">
+            <h3>Share your idea</h3>
+            <p>Tell us what you need: the product, size and quantity. A photo, sketch or old sample helps too.</p>
+          </li>
+          <li class="step">
+            <h3>Get a quote on WhatsApp</h3>
+            <p>We reply on WhatsApp with a clear price and a ready date, before any work starts.</p>
+          </li>
+          <li class="step">
+            <h3>Approve the design</h3>
+            <p>We send a digital proof. Ask for changes until it's right, then give us the go-ahead.</p>
+          </li>
+          <li class="step">
+            <h3>Receive your print</h3>
+            <p>Your job is printed, finished and checked, then ready to collect from the shop.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. Stats ==========================================================
+         PLACEHOLDER NUMBERS. Edit them in js/config.js → `stats`
+         (look for "STATS — PLACEHOLDER NUMBERS"). Not real figures yet.
+         ================================================================== -->
+    <section class="section section--sm section--tint stats-band" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title" class="visually-hidden">Perfect Print in numbers</h2>
+        <div class="stats" data-render="stats"></div>
+      </div>
+    </section>
+
+    <!-- 8. Final CTA ====================================================== -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-gradient">
+          <span class="blob blob--yellow" aria-hidden="true"></span>
+          <span class="blob blob--cyan" aria-hidden="true"></span>
+          <div class="cta-gradient-copy">
+            <p class="eyebrow">Ready when you are</p>
+            <h2 id="cta-title">Got something to print? Message us now.</h2>
+            <p>Send a photo, a sketch or a quick description on WhatsApp. We'll reply with a price and a ready date.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--whatsapp btn--lg" href="quote.html" data-wa-link="Hi Perfect Print! I'd like a quote for a print job."><span data-icon="whatsapp"></span> Chat on WhatsApp</a>
+            <a class="btn btn--light btn--lg" href="quote.html">Use the quote form</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/images.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

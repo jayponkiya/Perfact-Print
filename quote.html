@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get a Free Quote on WhatsApp — Perfect Print, Rajkot</title>
+  <meta name="description" content="Request a printing quote in a minute. Choose your service, quantity and date, and send the details straight to Perfect Print on WhatsApp.">
+  <link rel="canonical" href="https://www.example.com/quote.html">
+
+  <!-- Social sharing (replace https://www.example.com with the live domain) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Perfect Print">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Get a free quote — Perfect Print, Rajkot">
+  <meta property="og:description" content="Request a printing quote in a minute. Choose your service, quantity and date, and send the details straight to Perfect Print on WhatsApp.">
+  <meta property="og:url" content="https://www.example.com/quote.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/brand/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Perfect Print logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons (generated from the logo; see assets/favicon/) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0b0b0f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+  <script>
+    /* Motion: cover the page until js/animations.js starts the CMYK wipe (removed after 3 s at most).
+       Skipped entirely for visitors who prefer reduced motion. */
+    (function (d) {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      d.classList.add("pp-motion", "pp-loading");
+      setTimeout(function () { d.classList.remove("pp-loading"); }, 3000);
+    })(document.documentElement);
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="quote">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="media-bg"><img data-img="heroQuote" alt=""></div>
+      <span class="blob blob--magenta" aria-hidden="true"></span>
+      <span class="blob blob--cyan" aria-hidden="true"></span>
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Get a quote</li></ol>
+        </nav>
+        <p class="eyebrow">Free quote</p>
+        <h1 id="page-title">Get a quote on WhatsApp.</h1>
+        <p class="page-hero-lead">Fill in what you know; rough details are fine. When you press send, WhatsApp opens with your request written out, ready to send to us.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container quote-layout">
+
+        <div class="quote-form-wrap">
+          <div class="notice" data-wa-missing hidden role="status" style="margin-bottom:var(--sp-5)">
+            <span data-icon="info"></span>
+            <span>WhatsApp quoting isn't connected yet: the shop's number needs adding to <code>js/config.js</code>. You can copy your message from the preview in the meantime.</span>
+          </div>
+
+          <form id="quote-form" class="form" aria-labelledby="form-title" novalidate>
+            <h2 id="form-title" class="visually-hidden">Quotation request</h2>
+            <p class="form-required-note"><span class="req" aria-hidden="true">*</span> Required</p>
+
+            <h3 class="form-step-title"><span aria-hidden="true">1</span> What do you need?</h3>
+
+            <div class="field">
+              <label for="q-service">Service <span class="req" aria-hidden="true">*</span></label>
+              <select class="select" id="q-service" name="service" required data-required data-error-required="Please choose a service."></select>
+              <span class="field-error"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="q-quantity">Quantity <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="q-quantity" name="quantity" type="text" list="q-quantity-list" autocomplete="off" placeholder="e.g. 500 cards, 2 banners" required data-required data-error-required="Please tell us roughly how many you need.">
+                <datalist id="q-quantity-list"></datalist>
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="q-date">Needed by <span class="hint">(optional)</span></label>
+                <input class="input" id="q-date" name="needed_by" type="date" data-validate="future-date">
+                <span class="field-error"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="q-specs">Size / Paper / Material <span class="hint">(optional)</span></label>
+              <input class="input" id="q-specs" name="specs" type="text" placeholder="e.g. A4, 300gsm matte; 6 × 3 ft flex; self-inking stamp">
+            </div>
+
+            <fieldset class="field">
+              <legend>Delivery or pickup? <span class="hint">(optional)</span></legend>
+              <div class="choice-grid">
+                <label class="choice" for="q-pickup"><input type="radio" id="q-pickup" name="fulfilment" value="Pickup from the shop"><span>Pickup from the shop</span></label>
+                <label class="choice" for="q-delivery"><input type="radio" id="q-delivery" name="fulfilment" value="Delivery"><span>Delivery</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="q-details">Additional details <span class="hint">(optional)</span></label>
+              <textarea class="textarea" id="q-details" name="details" placeholder="Colours, text to print, finish, a reference you liked, delivery area…"></textarea>
+            </div>
+
+            <hr class="form-divider">
+            <h3 class="form-step-title"><span aria-hidden="true">2</span> Your details</h3>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="q-name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="q-name" name="name" type="text" autocomplete="name" required data-required data-error-required="Please enter your name.">
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="q-phone">Mobile number <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="98765 43210" required data-required data-validate="phone" data-error-required="Please enter your mobile number." data-error-phone="Enter a 10-digit Indian mobile number, e.g. 98765 43210.">
+                <span class="field-error"></span>
+              </div>
+            </div>
+
+            <p class="form-files-note">
+              <span data-icon="info"></span>
+              <span><strong>Have artwork or files?</strong> Once WhatsApp opens, attach your logo, design files or reference photos in the same chat. PDFs, images and design files all work.</span>
+            </p>
+
+            <div class="btn-row">
+              <button class="btn btn--whatsapp btn--lg" type="submit"><span data-icon="whatsapp"></span> Send request on WhatsApp</button>
+            </div>
+          </form>
+
+          <!-- Shown after a successful submit (js/quote.js) -->
+          <div class="form-success" data-form-success hidden tabindex="-1" role="status" aria-labelledby="success-title">
+            <span class="form-success-icon" data-icon="whatsapp"></span>
+            <h2 id="success-title">Your request is ready to send</h2>
+            <p data-success-lead>Your message is written and waiting in WhatsApp. Just press Send.</p>
+            <p class="form-files-note">
+              <span data-icon="info"></span>
+              <span>Attach artwork, logos or photos in the same WhatsApp chat.</span>
+            </p>
+            <p class="form-success-fallback">Didn't open? <a data-wa-fallback href="quote.html" target="_blank" rel="noopener">Click here</a></p>
+            <div class="btn-row">
+              <button type="button" class="btn btn--ghost btn--sm" data-form-edit>Edit my request</button>
+              <button type="button" class="btn btn--ghost btn--sm" data-form-new>Start a new request</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="quote-aside" aria-label="Message preview">
+          <div class="preview-card">
+            <h3><span data-icon="whatsapp"></span> Message preview</h3>
+            <p style="color:rgba(255,255,255,.7);font-size:var(--fs-sm)">This is what will be sent. You can still edit it in WhatsApp before sending.</p>
+            <div class="wa-bubble" id="wa-preview"></div>
+            <button type="button" class="btn btn--ghost-light btn--sm" id="copy-message" style="margin-top:var(--sp-4)">Copy message</button>
+          </div>
+          <div class="card card--flat" style="padding:var(--sp-5)">
+            <h3 style="font-size:var(--fs-md)">How it works</h3>
+            <p style="margin:0">Press send and WhatsApp opens with your request. Send it, add any files, and we'll reply with a price and a ready date.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/images.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/quote.js" defer></script>
+</body>
+</html>

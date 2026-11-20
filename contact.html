@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Perfect Print, Rajkot</title>
+  <meta name="description" content="Call, WhatsApp, email or visit Perfect Print in Bhakti Nagar, Rajkot. Address, map, opening hours and a quick message form.">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+
+  <!-- Social sharing (replace https://www.example.com with the live domain) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Perfect Print">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Contact Perfect Print, Rajkot">
+  <meta property="og:description" content="Call, WhatsApp, email or visit Perfect Print in Bhakti Nagar, Rajkot. Address, map, opening hours and a quick message form.">
+  <meta property="og:url" content="https://www.example.com/contact.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/brand/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Perfect Print logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons (generated from the logo; see assets/favicon/) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0b0b0f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+  <script>
+    /* Motion: cover the page until js/animations.js starts the CMYK wipe (removed after 3 s at most).
+       Skipped entirely for visitors who prefer reduced motion. */
+    (function (d) {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      d.classList.add("pp-motion", "pp-loading");
+      setTimeout(function () { d.classList.remove("pp-loading"); }, 3000);
+    })(document.documentElement);
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="media-bg"><img data-img="heroContact" alt=""></div>
+      <span class="blob blob--magenta" aria-hidden="true"></span>
+      <span class="blob blob--cyan" aria-hidden="true"></span>
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+        </nav>
+        <p class="eyebrow">Contact</p>
+        <h1 id="page-title">Let's talk about your print job.</h1>
+        <p class="page-hero-lead">Message us on WhatsApp, give us a call, or drop into the shop in Bhakti Nagar with your idea.</p>
+      </div>
+    </section>
+
+    <!-- Ways to reach us (from js/config.js) -->
+    <section class="section section--sm" aria-labelledby="reach-title">
+      <div class="container">
+        <h2 id="reach-title" class="visually-hidden">Ways to reach us</h2>
+        <ul class="contact-tiles" data-render="contact-tiles"></ul>
+      </div>
+    </section>
+
+    <section class="section section--tint" style="padding-top:var(--sp-8)">
+      <div class="container contact-layout">
+
+        <div class="contact-panel">
+          <h2 id="message-title">Send a quick message</h2>
+          <p class="muted">Write your message here and press send: WhatsApp opens with it ready to go. For a detailed price, the <a href="quote.html">quote form</a> asks the right questions.</p>
+
+          <div class="notice" data-wa-missing hidden role="status" style="margin-bottom:var(--sp-5)">
+            <span data-icon="info"></span>
+            <span>WhatsApp messaging isn't connected yet. Add the shop's number in <code>js/config.js</code>.</span>
+          </div>
+
+          <form id="contact-form" class="form" aria-labelledby="message-title" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="c-name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="c-name" name="name" type="text" autocomplete="name" required data-required data-error-required="Please enter your name.">
+                <span class="field-error"></span>
+              </div>
+              <div class="field">
+                <label for="c-phone">Mobile number <span class="hint">(optional)</span></label>
+                <input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="98765 43210" data-validate="phone" data-error-phone="Enter a 10-digit Indian mobile number, e.g. 98765 43210.">
+                <span class="field-error"></span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="c-message">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea class="textarea" id="c-message" name="message" required data-required data-error-required="Please write a message."></textarea>
+              <span class="field-error"></span>
+            </div>
+            <p class="form-files-note">
+              <span data-icon="info"></span>
+              <span>Want to show us a design or photo? Attach it in the WhatsApp chat once it opens.</span>
+            </p>
+            <div class="btn-row">
+              <button class="btn btn--whatsapp btn--lg" type="submit"><span data-icon="whatsapp"></span> Send on WhatsApp</button>
+            </div>
+          </form>
+
+          <!-- Shown after a successful submit (js/quote.js) -->
+          <div class="form-success" data-form-success hidden tabindex="-1" role="status" aria-labelledby="c-success-title">
+            <span class="form-success-icon" data-icon="whatsapp"></span>
+            <h2 id="c-success-title">Your message is ready to send</h2>
+            <p data-success-lead>Your message is written and waiting in WhatsApp. Just press Send.</p>
+            <p class="form-success-fallback">Didn't open? <a data-wa-fallback href="contact.html" target="_blank" rel="noopener">Click here</a></p>
+            <div class="btn-row">
+              <button type="button" class="btn btn--ghost btn--sm" data-form-edit>Edit my message</button>
+              <button type="button" class="btn btn--ghost btn--sm" data-form-new>Write a new message</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="contact-aside" aria-label="Opening hours and map">
+          <div class="contact-panel">
+            <h2 style="font-size:var(--fs-lg)">Opening hours</h2>
+            <!-- Fill in CONFIG.hours in js/config.js (see "OPENING HOURS — PLACEHOLDER") -->
+            <ul class="hours-list" data-render="hours"></ul>
+          </div>
+          <div data-render="map" data-hide-empty></div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/images.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/quote.js" defer></script>
+</body>
+</html>

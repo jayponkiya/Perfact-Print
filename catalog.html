@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog — Products &amp; Past Work | Perfect Print, Rajkot</title>
+  <meta name="description" content="Perfect Print's product catalog: printing, stamps and labels, signage and special items. Flip through the pages or download the PDF.">
+  <link rel="canonical" href="https://www.example.com/catalog.html">
+
+  <!-- Social sharing (replace https://www.example.com with the live domain) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Perfect Print">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Catalog — Perfect Print, Rajkot">
+  <meta property="og:description" content="Perfect Print's product catalog: printing, stamps and labels, signage and special items. Flip through the pages or download the PDF.">
+  <meta property="og:url" content="https://www.example.com/catalog.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/brand/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Perfect Print logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons (generated from the logo; see assets/favicon/) -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0b0b0f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+  <script>
+    /* Motion: cover the page until js/animations.js starts the CMYK wipe (removed after 3 s at most).
+       Skipped entirely for visitors who prefer reduced motion. */
+    (function (d) {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      d.classList.add("pp-motion", "pp-loading");
+      setTimeout(function () { d.classList.remove("pp-loading"); }, 3000);
+    })(document.documentElement);
+  </script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="catalog">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="media-bg"><img data-img="heroCatalog" alt=""></div>
+      <span class="blob blob--magenta" aria-hidden="true"></span>
+      <span class="blob blob--cyan" aria-hidden="true"></span>
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Catalog</li></ol>
+        </nav>
+        <p class="eyebrow">Catalog</p>
+        <h1 id="page-title">Our product catalog.</h1>
+        <p class="page-hero-lead">All 30 products by department, with photos, sizes and finishes. Flip through the pages below, or save the PDF to share with your team.</p>
+        <div class="btn-row page-hero-actions">
+          <a class="btn btn--primary" href="catalog.html" data-catalog-pdf target="_blank" rel="noopener">View the PDF <span class="visually-hidden">(opens in a new tab)</span> <span data-icon="arrow"></span></a>
+          <a class="btn btn--ghost-light" href="catalog.html" data-catalog-pdf download="Perfect-Print-Catalog.pdf">Download (<span data-catalog-size></span>)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery: the image list lives in js/main.js → CATALOG -->
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="visually-hidden">Catalog pages</h2>
+        <div class="filters" role="group" aria-label="Filter by department" data-render-filters></div>
+        <p class="catalog-status" role="status" data-catalog-status></p>
+        <ul class="catalog-grid" data-render-catalog></ul>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="catalog-cta-title">
+      <div class="container text-center">
+        <h2 id="catalog-cta-title">Seen something you like?</h2>
+        <p class="lead" style="max-width:52ch;margin-inline:auto;margin-bottom:var(--sp-6)">Send us the product name or a screenshot of the page and we'll come back with a price. Every product in the PDF also has its own WhatsApp link.</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--primary" href="quote.html">Request a quote <span data-icon="arrow"></span></a>
+          <a class="btn btn--ghost" href="catalog.html" data-catalog-pdf download="Perfect-Print-Catalog.pdf">Download the catalog (<span data-catalog-size></span>)</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/images.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

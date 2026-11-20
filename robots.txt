@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Replace https://www.example.com with the live domain before launch.
+Sitemap: https://www.example.com/sitemap.xml
